@@ -31,3 +31,5 @@ int main()
 	pypart2(n);
 	return 0;
 }
+
+//write a code to sort array using quick sort

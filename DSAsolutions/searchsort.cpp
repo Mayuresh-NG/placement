@@ -1,28 +1,37 @@
-// C++ program to implement iterative Binary Search
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int binarySearch(int arr[], int l, int r, int x)
+int binarySearch(int arr[], int n , int key)
 {
-	while (l <= r) 
+    int s=0;
+    int e = n;
+    int mid;
+
+    while(s<=e)
     {
-		int m = l + (r - l) / 2;
-
-		if (arr[m] > x) r = m - 1;
-
-		else if (arr[m] < x) l = m + 1;
-
-		else return m;
-	}
-	return -1;
+        mid = s+e/2;
+        if (arr[mid] == key)
+        {
+            return mid;
+        }
+        else if(arr[mid]<key)
+        {
+            s = mid + 1 ;
+        }
+        else if(arr[mid]>key)
+        {
+            e = mid -1 ;
+        }
+    }
+    return -1;
 }
 
 int main()
 {
-	int arr[] = { 2, 3, 4, 10, 40 };
-	int x = 40;
-	int n = sizeof(arr) / sizeof(arr[0]);
-	int result = binarySearch(arr, 0, n - 1, x);
-	cout<<result;
-	return 0;
+    int k;
+    int arr[5] = {15,20,35,60,90};
+    cout<<"Enter number to search";
+    cin>>k;
+    cout<<binarySearch(arr,5,k);
+    return 0;
 }

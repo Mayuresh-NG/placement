@@ -1,7 +1,8 @@
 {
-    "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve",
+    "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "random": "c"
     }
 }

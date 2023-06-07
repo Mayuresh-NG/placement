@@ -95,3 +95,52 @@ using namespace std;
 //     return 0;
 // }
 
+//WAP to print trinagle pattern,square pattern.
+// int main()
+// {
+//     int num;
+//     cin>>num;
+//     for(int row=0;row<num;row++)
+//     {
+//         for (int col= 0;col<num;col++)
+//         {
+//             if(row==0 || row==num-1 || col==0 || col==num-1)
+//             { 
+//                 cout<<" * ";
+//             }
+//             else cout<<"   ";
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+int main()
+{
+    int N;
+    cin>>N;
+    int sum=0;
+    int flag = 0;
+
+    for(int i=1;i<N;i++)
+    {
+        if(flag==0)
+        {
+            sum+=1;
+            cout<<"oswald"<<" ";
+            flag = 1;
+        }
+        else if(flag==1)
+        {
+            sum+=2;
+            else cout<<"Henry"<<" ";
+            flag=0;
+        }
+    }
+    if(flag==1)
+    {
+        cout<<"oswald";
+    }
+    else cout<<"Henry";
+    return 0;
+}

@@ -77,20 +77,21 @@ using namespace std;
 // }
 
 //Divisibl by 3
-int  main()
-{
-    int l,r,v;
-    std::cout<<"Enter initial , final and divisible";
-    std::cin>>l>>r>>v;
-    int count=0;
-    for (int i = l; i < r; i++)
-    {
-        if(i%v==0)
-        {
-            std::cout<<i<<" ";
-            count++;
-        }
-    }
-    std::cout<<count;
-    return 0;
-}
+// int  main()
+// {
+//     int l,r,v;
+//     std::cout<<"Enter initial , final and divisible";
+//     std::cin>>l>>r>>v;
+//     int count=0;
+//     for (int i = l; i < r; i++)
+//     {
+//         if(i%v==0)
+//         {
+//             std::cout<<i<<" ";
+//             count++;
+//         }
+//     }
+//     std::cout<<count;
+//     return 0;
+// }
+

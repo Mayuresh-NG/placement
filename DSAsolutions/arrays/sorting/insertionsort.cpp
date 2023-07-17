@@ -13,15 +13,17 @@ int main()
         while (arr[j]>curent && j>=0)
         {
             arr[j+1]=arr[j];
+            cout<<arr[j+1]<<" ";
             j--;
         }
         arr[j+1]=curent;
+        cout<<arr[j+1]<<" ";
 
     }
-    for (int  i = 0; i < size; i++)
-    {
-        cout<<arr[i]<<" ";
-    }cout<<endl;
+    // for (int  i = 0; i < size; i++)
+    // {
+    //     cout<<arr[i]<<" ";
+    // }cout<<endl;
     
 
     return 0;

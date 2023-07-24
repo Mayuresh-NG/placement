@@ -15,6 +15,7 @@ class node
     }
 };
 
+
 void IAT(node* &head, int val)
 {
     node* n = new node(val);
